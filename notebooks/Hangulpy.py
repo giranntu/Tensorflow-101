@@ -135,7 +135,7 @@ def automata(text):
 
         elif status == "JONG1":
 
-            if c != COMPOSE_CODE and c in JONGSUNGS:
+            if c != COMPOSE_CODE and c in JONGSUNGS: 
                 jongsung = c
 
                 if c in JONG_COMP:
@@ -144,7 +144,7 @@ def automata(text):
                     res_text = res_text + compose(chosung, joongsung, jongsung)
                     status="CHO"
 
-            else:
+            else: 
                 res_text = res_text + compose(chosung, joongsung)
 
                 if c in CHOSUNGS:
